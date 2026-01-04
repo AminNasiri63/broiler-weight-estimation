@@ -113,7 +113,8 @@ The CSV output contains the following columns:
 
 ## Known Tradeoffs
 
-- Simplified Body Model
+- **Simplified Body Model**
+
 Weight estimation is based on a cylindrical body assumption to ensure computational efficiency and interpretability.
 
 - Lighting Sensitivity
