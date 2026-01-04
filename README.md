@@ -97,7 +97,7 @@ Example configuration:
 python "main execution.py"
 ```
 
-The system will process the video and output results to `cam1_results.csv`.
+The system processes the input video and saves an annotated output video along with a camera-specific CSV file named `<camera_id>_results.csv`.
 
 ### Output Format
 
