@@ -103,6 +103,17 @@ The system processes the input video and saves an annotated output video along w
 
 The CSV output contains the following columns:
 
+| Field        | Description |
+|-------------|-------------|
+| `camera_id` | Camera identifier |
+| `frame_idx` | Frame number |
+| `label`     | Object label (default: `"broiler"`) |
+| `score`     | Combined confidence score |
+| `volume`    | Estimated weight (kg) |
+| `crop_region` | Bounding box coordinates `(x, y, w, h)` |
+
+
+
 - `camera_id`: Camera identifier
 - `frame_idx`: Frame number
 - `label`: Object label (default: "broiler")
