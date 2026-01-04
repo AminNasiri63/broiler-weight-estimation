@@ -94,10 +94,10 @@ Example configuration:
 ```
 ### Camera Calibration
 
-Accurate weight estimation requires pixel-to-real-world calibration (pixel_to_cm in `cameras_config.json` file).  
-In this project, the **Segment Anything Model (SAM)** is used to segment the feeder region from the image, producing a clean, reliable mask of a known reference object.
-In the current implementation, the pixel-to-centimeter conversion factor is **set manually** based on the segmented feeder dimensions.
-In commercial farm environments, feeders are well-suited for calibration because their **geometry and physical dimensions are typically fixed and known**. This makes feeder-based calibration a practical, repeatable approach that does not require additional calibration targets.
+- Accurate weight estimation requires pixel-to-real-world calibration (pixel_to_cm in `cameras_config.json` file).  
+- In this project, the **Segment Anything Model (SAM)** is used to segment the feeder region from the image, producing a clean, reliable mask of a known reference object.
+- In the current implementation, the pixel-to-centimeter conversion factor is **set manually** based on the segmented feeder dimensions.
+- In commercial farm environments, feeders are well-suited for calibration because their **geometry and physical dimensions are typically fixed and known**. This makes feeder-based calibration a practical, repeatable approach that does not require additional calibration targets.
 
 
 
