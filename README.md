@@ -24,7 +24,7 @@ Unlike deep learning–heavy solutions, this project focuses on classical CV + g
 - **Classical, Learning-Free Segmentation**: HSV-based foreground extraction with morphological refinement
 - **Robust Object Selection**: Overlap rejection, confidence scoring, and configurable Top-K candidate selection
 - **Pose-Normalized Weight Estimation**: Orientation normalization followed by geometry-based volume calculation
-- **Structured Outputs**: CSV logging for downstream analysis
+- **Structured Outputs**: CSV logging and annotated video output for debugging and offline analysis
 - **Modular Architecture**: Strategy and Factory patterns enabling extensibility and future DL integration
 
 ---
@@ -87,10 +87,11 @@ Example configuration:
 
 ## Usage
 
-1. Configure your cameras in `cameras_config.json`
-2. Place your video files in the project directory
-3. Update the video path in `main execution.py` if necessary
-4. Run the main script:
+1. Configure camera parameters in `cameras_config.json`
+2. Place input video files in the project directory
+3. (Optional) Adjust the Top-K candidate selection via the `top_k` parameter in the object filtering stage
+4. Update the video path in `main_execution.py` if needed
+5. Run the main script:
 
 ```bash
 python "main execution.py"
@@ -114,11 +115,8 @@ The CSV output contains the following columns:
 **These are deliberate design choices aimed at reliability, transparency, and low deployment cost.**
 
 - **Simplified Body Model:** Weight estimation is based on a cylindrical body assumption to ensure computational efficiency and interpretability.
-
 - **Lighting Sensitivity:** Classical segmentation performs best under controlled illumination, which is a common constraint in commercial poultry houses.
-
 - **Manual Calibration:** Pixel-to-centimeter calibration is currently configured on a per-camera basis to maintain measurement accuracy.
-
 - **Template Dependency:** Shape-based validation relies on orientation-consistent templates, prioritizing precision over recall.
 
 ---
@@ -133,5 +131,9 @@ The CSV output contains the following columns:
 ---
 
 ## License
+MIT License.
 
-This project is provided as-is for research and development purposes.
+---
+
+## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
