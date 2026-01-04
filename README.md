@@ -32,18 +32,21 @@ Unlike deep learning–heavy solutions, this project focuses on classical CV + g
 ## Project Structure
 
 ```
-├── main execution.py          # Main entry point
-├── VideoProcessorPipeline.py  # Core video processing pipeline
-├── CameraLoader.py           # Camera configuration loader
-├── SegmentationStrategy.py   # Segmentation implementations (Classical/Deep Learning)
-├── ObjectFilterStrategy.py   # Object filtering and scoring logic
-├── AreaCalculatorStrategy.py # Volume/weight calculation strategies
-├── OutputWriters.py          # Output formatters (CSV)
-├── Factories.py              # Factory classes for strategy creation
-├── VideoIOClass.py           # Video input/output utilities
-├── cameras_config.json       # Camera configuration file
-├── broiler_template.png      # Template mask for broiler matching
-└── cam1.mp4                  # Sample video file
+├── src
+    ├── main execution.py          # Main entry point
+    ├── VideoProcessorPipeline.py  # Core video processing pipeline
+    ├── CameraLoader.py           # Camera configuration loader
+    ├── SegmentationStrategy.py   # Segmentation implementations (Classical/Deep Learning)
+    ├── ObjectFilterStrategy.py   # Object filtering and scoring logic
+    ├── AreaCalculatorStrategy.py # Volume/weight calculation strategies
+    ├── OutputWriters.py          # Output formatters (CSV)
+    ├── Factories.py              # Factory classes for strategy creation
+    ├── VideoIOClass.py           # Video input/output utilities
+    ├── cameras_config.json       # Camera configuration file
+    ├── broiler_template.png      # Template mask for broiler matching
+    └── cam1.mp4                  # Sample video file
+├── requirements.txt
+└── README.md
 ```
 ---
 
