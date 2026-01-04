@@ -23,7 +23,7 @@ Unlike deep learning–heavy solutions, this project focuses on classical CV + g
 - **End-to-End Video Pipeline**: Frame ingestion, ROI handling, segmentation, object validation, and weight estimation
 - **Classical, Learning-Free Segmentation**: HSV-based foreground extraction with morphological refinement
 - **Robust Object Selection**: Overlap rejection, confidence scoring, and configurable Top-K candidate selection
-- **Pose-Normalized Weight Estimation**: Orientation normalization followed by geometry-based volume calculation
+- **Pose-Normalized, Density-Aware Weight Estimation**: Orientation normalization + geometry-based volume computation, converted to weight using configurable broiler density (default: 900 kg/m³).
 - **Structured Outputs**: CSV logging and annotated video output for debugging and offline analysis
 - **Modular Architecture**: Strategy and Factory patterns enabling extensibility and future DL integration
 
@@ -124,8 +124,8 @@ The CSV output contains the following columns:
 ## Roadmap
 
 - Integration of deep learning models for improved segmentation
+- Posture-aware frame selection to improve volume-based weight estimation accuracy
 - Multi-species support with configurable templates
-- Real-time processing optimization
 - Web interface for configuration and monitoring
 - Statistical analysis and reporting features
 ---
