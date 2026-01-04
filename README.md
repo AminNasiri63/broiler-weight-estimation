@@ -28,7 +28,7 @@ https://github.com/user-attachments/assets/fe745700-ba96-4303-a332-41783033921b
 
 - **End-to-End Video Pipeline**: Frame ingestion, ROI handling, segmentation, object validation, and weight estimation
 - **Classical, Learning-Free Segmentation**: HSV-based foreground extraction with morphological refinement
-- **Robust Object Selection**: Overlap rejection, confidence scoring, and configurable Top-K candidate selection
+- **Robust Object Selection**: Overlap rejection, boundary-touching instance removal, confidence scoring, and configurable Top-K candidate selection
 - **Pose-Normalized, Density-Aware Weight Estimation**: Orientation normalization + geometry-based volume computation, converted to weight using configurable broiler density (default: 900 kg/m³).
 - **Structured Outputs**: CSV logging and annotated video output for debugging and offline analysis
 - **Modular Architecture**: Strategy and Factory patterns enabling extensibility and future DL integration
