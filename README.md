@@ -112,6 +112,7 @@ The CSV output contains the following columns:
 ---
 
 ## Known Tradeoffs
+**These are deliberate design choices aimed at reliability, transparency, and low deployment cost.**
 
 - **Simplified Body Model:** Weight estimation is based on a cylindrical body assumption to ensure computational efficiency and interpretability.
 
@@ -121,7 +122,6 @@ The CSV output contains the following columns:
 
 - **Template Dependency:** Shape-based validation relies on orientation-consistent templates, prioritizing precision over recall.
 
-**These are deliberate design choices aimed at reliability, transparency, and low deployment cost.**
 ---
 
 ## Roadmap
