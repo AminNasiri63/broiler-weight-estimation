@@ -149,7 +149,7 @@ The CSV output contains the following columns:
 
 ## Practical Notes
 
-- Continuous per-frame estimation is often unnecessary; sampling frames and top-ranked broilers within a fixed time window can reduce compute without sacrificing monitoring quality.
+- Continuous per-frame estimation is often unnecessary; sampling frames and top-ranked broilers within a fixed time window can reduce computation without sacrificing monitoring quality.
 
 ---
 
