@@ -19,7 +19,7 @@ https://github.com/user-attachments/assets/fe745700-ba96-4303-a332-41783033921b
 - Reduces reliance on manual weighing.
 - Designed for continuous, camera-based operation.
 - Prioritizes explainability and engineering simplicity.
-- Relevant Domains: AgTech & Precision Livestock · Edge / Applied Computer Vision
+- Relevant Domains: AgTech & Precision Livestock · Edge / Applied Computer Vision.
 ---
 
 ## Features
