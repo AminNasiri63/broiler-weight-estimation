@@ -99,8 +99,12 @@ Example configuration:
 - In the current implementation, the pixel-to-centimeter conversion factor is **set manually** based on the segmented feeder dimensions.
 - In commercial farm environments, feeders are well-suited for calibration because their **geometry and physical dimensions are typically fixed and known**. This makes feeder-based calibration a practical, repeatable approach that does not require additional calibration targets.
 
+---
 
+## Method Overview
+Volume estimation is performed by slicing the segmented broiler mask into vertical cross-sections, each approximated as a cylinder with height proportional to the pixel resolution.
 
+<img width="277" height="277" alt="broiler_sliced" src="https://github.com/user-attachments/assets/6df47e37-d308-4f29-b498-61287583cdd4" />
 
 
 ---
