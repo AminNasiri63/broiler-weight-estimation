@@ -113,20 +113,13 @@ The CSV output contains the following columns:
 
 ## Known Tradeoffs
 
-- **Simplified Body Model**
+- **Simplified Body Model:** Weight estimation is based on a cylindrical body assumption to ensure computational efficiency and interpretability.
 
-Weight estimation is based on a cylindrical body assumption to ensure computational efficiency and interpretability.
+- **Lighting Sensitivity:** Classical segmentation performs best under controlled illumination, which is a common constraint in commercial poultry houses.
 
-- **Lighting Sensitivity**
+- **Manual Calibration:** Pixel-to-centimeter calibration is currently configured on a per-camera basis to maintain measurement accuracy.
 
-Classical segmentation performs best under controlled illumination, which is a common constraint in commercial poultry houses.
-
-- **Manual Calibration**
-
-Pixel-to-centimeter calibration is currently configured on a per-camera basis to maintain measurement accuracy.
-
-- **Template Dependency**
-Shape-based validation relies on orientation-consistent templates, prioritizing precision over recall.
+- **Template Dependency:** Shape-based validation relies on orientation-consistent templates, prioritizing precision over recall.
 
 **These are deliberate design choices aimed at reliability, transparency, and low deployment cost.**
 ---
